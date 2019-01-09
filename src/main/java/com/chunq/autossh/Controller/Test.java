@@ -11,7 +11,7 @@ public class Test {
     @RequestMapping("/index")
     public String hello(HttpServletRequest request, @RequestParam(value = "name", required = false, defaultValue = "springboot-thymeleaf") String name) {
         request.setAttribute("name", name);
-        return "test";
+        return "/html/index";
     }
 
 
